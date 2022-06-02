@@ -10,7 +10,7 @@ const router = express.Router();
 app.set('view engine', 'ejs');
 // 사용자 인증 미들웨어 불러오기
 const authMiddlewares = require("./middlewares/authconfirm");
-const Comment = require("./models/comment");
+
 // Robo T3 DB 연결
 mongoose.connect("mongodb://localhost/SPA_Expert_HOMEWORK", {
     useNewUrlParser: true,
